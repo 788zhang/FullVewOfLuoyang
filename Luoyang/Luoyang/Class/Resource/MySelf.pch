@@ -14,7 +14,7 @@
 //网络请求和加载网络图片
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import <UIImageView+WebCache.h>
-#import "interFace.h"
+
 
 #import "UIViewController+Common.h"
 

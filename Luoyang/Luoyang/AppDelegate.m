@@ -7,6 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "ShowViewController.h"
+#import "NewsViewController.h"
+#import "ServiceViewController.h"
+#import "MessageViewController.h"
+
+
+
+
 
 @interface AppDelegate ()
 
@@ -18,6 +26,100 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    
+     UITabBarController *tabbar=[[UITabBarController alloc]init];
+    //展示类
+    ShowViewController *show=[[ShowViewController alloc]init];
+    
+    UINavigationController *showNav=[[UINavigationController alloc]initWithRootViewController:show];
+    
+    //导航栏颜色
+    showNav.navigationBar.barTintColor = barColor;
+    
+    showNav.tabBarItem.image=[UIImage imageNamed:@"bottom_people"];
+    UIImage *image=[UIImage imageNamed:@"bottom_people_on"];
+    //按图片原来状态显示
+    showNav.tabBarItem.selectedImage=[image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    showNav.tabBarItem.title=@"主页";
+//    [UITabBar appearance].tintColor=[UIColor grayColor];
+   
+    
+    
+    
+    //上左下右
+    showNav.tabBarItem.imageInsets=UIEdgeInsetsMake(3, 0, -3, 0);
+    
+    
+    
+    NewsViewController *news=[[NewsViewController alloc]init];
+    
+    UINavigationController *newNav=[[UINavigationController alloc]initWithRootViewController:news];
+    
+    
+    //导航栏颜色
+    newNav.navigationBar.barTintColor = barColor;
+    
+    
+    newNav.tabBarItem.image=[UIImage imageNamed:@"bottom_newspaper"];
+    UIImage *newimage=[UIImage imageNamed:@"bottom_newspaper_on"];
+    //按图片原来状态显示
+    newNav.tabBarItem.selectedImage=[newimage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    newNav.tabBarItem.title=@"电子报";
+
+    MessageViewController *message=[[MessageViewController alloc]init];
+    UINavigationController *messageNav=[[UINavigationController alloc]initWithRootViewController:message];
+    
+   
+    messageNav.tabBarItem.image=[UIImage imageNamed:@"ic_tab_4_unpress"];
+    
+    UIImage *mineimage=[UIImage imageNamed:@"ic_tab_4_press"];
+    //按图片原来状态显示
+    messageNav.tabBarItem.selectedImage=[mineimage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    messageNav.tabBarItem.imageInsets=UIEdgeInsetsMake(3, 0, -3, 0);
+    
+    //导航栏颜色
+    messageNav.navigationBar.barTintColor = barColor;
+    messageNav.tabBarItem.title=@"消息";
+    
+    ServiceViewController *service=[[ServiceViewController alloc]init];
+    UINavigationController *serviceNav=[[UINavigationController alloc]initWithRootViewController:service];
+    
+    
+    serviceNav.tabBarItem.image=[UIImage imageNamed:@"bottom_recharge"];
+    
+    UIImage *serviceNavimage=[UIImage imageNamed:@"bottom_recharge_on"];
+    //按图片原来状态显示
+    serviceNav.tabBarItem.selectedImage=[serviceNavimage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    serviceNav.tabBarItem.imageInsets=UIEdgeInsetsMake(3, 0, -3, 0);
+    
+    //导航栏颜色
+    serviceNav.navigationBar.barTintColor =barColor;
+    
+    serviceNav.tabBarItem.title=@"服务";
+    
+    tabbar.tabBar.tintColor=[UIColor redColor];
+    
+    
+    tabbar.viewControllers=@[showNav,newNav,messageNav,serviceNav];
+    self.window.rootViewController=tabbar;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
         
     self.window.backgroundColor = [UIColor whiteColor];

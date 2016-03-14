@@ -16,6 +16,10 @@
 		7A564DBD1C964D4400A4ABD6 /* HWTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A564DBC1C964D4400A4ABD6 /* HWTools.m */; };
 		7A564DC21C964D5200A4ABD6 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A564DBF1C964D5200A4ABD6 /* ProgressHUD.bundle */; };
 		7A564DC31C964D5200A4ABD6 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A564DC11C964D5200A4ABD6 /* ProgressHUD.m */; };
+		7A564DEE1C96955700A4ABD6 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A564DED1C96955700A4ABD6 /* MessageViewController.m */; };
+		7A564DF11C96956A00A4ABD6 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A564DF01C96956A00A4ABD6 /* NewsViewController.m */; };
+		7A564DF41C96957600A4ABD6 /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A564DF31C96957600A4ABD6 /* ShowViewController.m */; };
+		7A564DF71C96958D00A4ABD6 /* ServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A564DF61C96958D00A4ABD6 /* ServiceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,14 @@
 		7A564DBF1C964D5200A4ABD6 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		7A564DC01C964D5200A4ABD6 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		7A564DC11C964D5200A4ABD6 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		7A564DEC1C96955700A4ABD6 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		7A564DED1C96955700A4ABD6 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		7A564DEF1C96956A00A4ABD6 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		7A564DF01C96956A00A4ABD6 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		7A564DF21C96957600A4ABD6 /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		7A564DF31C96957600A4ABD6 /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
+		7A564DF51C96958D00A4ABD6 /* ServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceViewController.h; sourceTree = "<group>"; };
+		7A564DF61C96958D00A4ABD6 /* ServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceViewController.m; sourceTree = "<group>"; };
 		985353E8F77DDE94569D552B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A59FD907FA002FF1C0C1E1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +134,8 @@
 		7A564DA21C964B0800A4ABD6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7A564DF21C96957600A4ABD6 /* ShowViewController.h */,
+				7A564DF31C96957600A4ABD6 /* ShowViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +168,8 @@
 		7A564DA61C964B3D00A4ABD6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7A564DEF1C96956A00A4ABD6 /* NewsViewController.h */,
+				7A564DF01C96956A00A4ABD6 /* NewsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,6 +202,8 @@
 		7A564DAA1C964B7900A4ABD6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7A564DEC1C96955700A4ABD6 /* MessageViewController.h */,
+				7A564DED1C96955700A4ABD6 /* MessageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +236,8 @@
 		7A564DAE1C964BCB00A4ABD6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7A564DF51C96958D00A4ABD6 /* ServiceViewController.h */,
+				7A564DF61C96958D00A4ABD6 /* ServiceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -424,11 +444,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A564DEE1C96955700A4ABD6 /* MessageViewController.m in Sources */,
 				7A564DBD1C964D4400A4ABD6 /* HWTools.m in Sources */,
 				7A564D951C96389A00A4ABD6 /* AppDelegate.m in Sources */,
 				7A564DC31C964D5200A4ABD6 /* ProgressHUD.m in Sources */,
 				7A564DBA1C964D1E00A4ABD6 /* UIViewController+Common.m in Sources */,
+				7A564DF71C96958D00A4ABD6 /* ServiceViewController.m in Sources */,
 				7A564D921C96389A00A4ABD6 /* main.m in Sources */,
+				7A564DF11C96956A00A4ABD6 /* NewsViewController.m in Sources */,
+				7A564DF41C96957600A4ABD6 /* ShowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
