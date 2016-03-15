@@ -8,6 +8,8 @@
 //Users/scjy/Desktop/C段项目/FullVewOfLuoyang/Luoyang/Luoyang/Class/Resource/MySelf.pch
 #ifndef MySelf_pch
 #define MySelf_pch
+#import "Header.h"
+
 //接口定义的头文件
 
 
